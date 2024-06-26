@@ -18,10 +18,10 @@ describe('CardContainerComponent', () => {
           useValue: {
             onFetchPhotoAlbums: jasmine.createSpy('onFetchPhotoAlbums').and.returnValue(
               of([
-                { albumId: 1, photoId: 1, photoUrl: 'url1' },
-                { albumId: 1, photoId: 2, photoUrl: 'url2' },
-                { albumId: 2, photoId: 1, photoUrl: 'url3' },
-                { albumId: 2, photoId: 2, photoUrl: 'url4' },
+                { albumId: 1, id: 1, thumbnailUrl: 'url1' },
+                { albumId: 1, id: 2, thumbnailUrl: 'url2' },
+                { albumId: 2, id: 1, thumbnailUrl: 'url3' },
+                { albumId: 2, id: 2, thumbnailUrl: 'url4' },
               ] as albumData[])
             ),
           },
